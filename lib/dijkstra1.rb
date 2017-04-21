@@ -1,5 +1,4 @@
 require_relative 'graph'
-require 'byebug'
 
 # O(|V|**2 + |E|).
 def dijkstra1(vertex)
@@ -18,15 +17,11 @@ def dijkstra1(vertex)
 
     # Add out_edges to possible paths
     min_vertex.out_edges.each do |edge|
-      source_vertex = edge.from_vertex
-      total_cost = min_data[:cost] + edge.cost
-
       possible_paths[edge.to_vertex] = {
-        last_edge: current_vertex,
-        cost: Float::Infinity
+        last_edge: edge,
+        cost: min_data[:cost] + edge.cost
       }
     end
-    # Make sure min was treated correctly
   end
 
   shortest_paths
