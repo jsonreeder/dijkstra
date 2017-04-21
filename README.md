@@ -37,7 +37,7 @@ The `BinaryMinHeap` class has been provided for you. This is an advanced version
 
 `priority_map.rb`
 
-We need to store the vertices in the heap, but we want to heapify them based on the cost that it takes to reach them. In order to do this, let's create the `PriorityMap` class. The `PriorityMap` class will take in a Proc for sorting.  We will need to store a hash (with vertices as the keys and the cost to reach them as the values) and a `BinaryMinHeap` as instance variables. Name these variables `map` and `queue`, respectively.  Make sure to initialize your `BinaryMinHeap` with a proc that sorts elements based on their values in the map.  
+We need to store the vertices in the heap, but we want to heapify them based on the cost that it takes to reach them. In order to do this, let's create the `PriorityMap` class. The `PriorityMap` class will take in a Proc for sorting.  We will need to store a hash (with vertices as the keys and the cost to reach them as the values) and a `BinaryMinHeap` as instance variables. Name these variables `map` and `queue`, respectively.  Make sure to initialize your `BinaryMinHeap` with a proc that sorts elements based on their values in the map.
 
 Now let's fill out the rest of the class.  When vertices are added to the priority map, we will:
 
